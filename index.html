@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bishal Dey Portfolio</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <!-- Your Name -->
+    <h1>Bishal Dey</h1>
+    <!-- Short Description / Title -->
+    <p>Web Dev | Minimal Portfolio</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <!-- Section Title -->
+    <h2>About Me</h2>
+    <!-- Short bio or introduction -->
+    <p>Hello! I am Bishal, a developer who loves minimalistic designs and clean code.</p>
+  </section>
+
+  <!-- Projects / Works Section -->
+  <section class="projects">
+  <h2>My Works</h2>
+  <div class="project-gallery">
+
+    <!-- Each project -->
+    <div class="project-card">
+      <a href="https://github.com/yourusername/project1" target="_blank">
+        <div class="media-container">
+          <!-- ✅ Thumbnail image (static preview) -->
+          <img src="images/project1-thumbnail.jpg" alt="Project 1 Thumbnail" class="preview-img">
+          
+          <!-- ✅ Video plays on hover -->
+          <video class="preview-video" muted loop preload="none">
+            <source src="videos/project1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>Project 1 — Portfolio Website</p>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="https://github.com/yourusername/project1" target="_blank">
+        <div class="media-container">
+          <!-- ✅ Thumbnail image (static preview) -->
+          <img src="images/project1-thumbnail.jpg" alt="Project 1 Thumbnail" class="preview-img">
+          
+          <!-- ✅ Video plays on hover -->
+          <video class="preview-video" muted loop preload="none">
+            <source src="videos/project1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>Project 1 — Portfolio Website</p>
+      </a>
+    </div><div class="project-card">
+      <a href="https://github.com/yourusername/project1" target="_blank">
+        <div class="media-container">
+          <!-- ✅ Thumbnail image (static preview) -->
+          <img src="images/project1-thumbnail.jpg" alt="Project 1 Thumbnail" class="preview-img">
+          
+          <!-- ✅ Video plays on hover -->
+          <video class="preview-video" muted loop preload="none">
+            <source src="videos/project1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>Project 1 — Portfolio Website</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Services I Can Provide</h2>
+    <div class="services-gallery">
+      <!-- Each service -->
+      <label>
+        <!-- Checkbox to select this service -->
+        <input type="checkbox" value="Website Design"> 
+        <img src="images/service1.png" alt="Website Design">
+        <p>Website Design</p>
+      </label>
+      <label>
+        <input type="checkbox" value="Portfolio Setup"> 
+        <img src="images/service2.png" alt="Portfolio Setup">
+        <p>Portfolio Setup</p>
+      </label>
+      <!-- Add more services by copying <label> blocks -->
+    </div>
+  </section>
+
+  <!-- Request / Contact Form Section -->
+  <section class="request">
+    <h2>Request My Services</h2>
+    <form id="requestForm">
+      <!-- Name field -->
+      <input type="text" id="rname" placeholder="Your Name" required>
+      <!-- Email field -->
+      <input type="email" id="remail" placeholder="Your Email" required>
+      <!-- WhatsApp / Phone field -->
+      <input type="tel" id="rphone" placeholder="WhatsApp Number" required>
+      <!-- Message / Notes field -->
+      <textarea id="rmessage" placeholder="Message" rows="4"></textarea>
+
+      <!-- Services checkboxes (users select what they want) -->
+      <p>Select Services:</p>
+      <div id="selectedServices">
+        <!-- You can copy the checkboxes from the services gallery here -->
+        <label><input type="checkbox" value="Website Design"> Website Design</label>
+        <label><input type="checkbox" value="Portfolio Setup"> Portfolio Setup</label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit">Send Request</button>
+    </form>
+    <!-- Status message for form submission -->
+    <p id="rstatus"></p>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <!-- LinkedIn -->
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/bishaldey091" target="_blank">linkedin.com/in/bishaldey091</a></p>
+      <!-- Email -->
+      <p>Email: <a href="mailto:bishaldey.in@gmail.com">bishdaldey.in@gmail.com</a></p>
+      <!-- WhatsApp -->
+      <p>WhatsApp: <a href="https://wa.me/919387897930" target="_blank">+91 93878 97930</a></p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Bishal Dey. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

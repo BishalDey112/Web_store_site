@@ -1,0 +1,231 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body styles */
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem; /* Big title font */
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem; /* Subtitle font */
+  color: #666;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Projects gallery */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-gallery a {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+.project-gallery a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Services gallery */
+.services-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.services-gallery label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.services-gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.services-gallery input[type="checkbox"] {
+  margin-bottom: 5px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #0077b5; /* Blue button */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #005f87;
+}
+
+/* Contact Info */
+.contact-info p a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.contact-info p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+  margin-top: 50px;
+}
+/* Center the About section text */
+.about {
+  text-align: center;   /* centers heading and paragraph */
+}
+.about {
+  text-align: center;
+  max-width: 700px;      /* optional: control width */
+  margin: 0 auto;        /* centers the section horizontally */
+  padding: 40px 20px;    /* vertical spacing */
+}
+/* Container that holds both image and video */
+.media-container {
+  position: relative;
+  width: 100%;
+  height: 200px;          /* you can adjust */
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Image styling */
+.media-container img,
+.media-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+  display: block;
+}
+
+/* Video hidden by default */
+.media-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* On hover — show video, hide image */
+.media-container:hover img {
+  opacity: 0;
+}
+.media-container:hover video {
+  opacity: 1;
+}
+
+/* Optional: pause video when not hovering */
+.media-container video {
+  pointer-events: none; /* prevent accidental clicks */
+}
+.media-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.media-container img,
+.media-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.media-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Fade transition on hover */
+.media-container:hover img {
+  opacity: 0;
+}
+.media-container:hover video {
+  opacity: 1;
+}
